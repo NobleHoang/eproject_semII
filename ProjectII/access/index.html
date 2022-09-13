@@ -11,21 +11,19 @@
       sizes="700x700"
     />
     <title>5SUPERHERO-ProjectII</title>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css" />
     <link rel="stylesheet" href="./style/base.css" />
     <link rel="stylesheet" href="./style/main.css" />
-    <link href="./style/aos.css" rel="stylesheet"/>
+    <link href="./style/aos.css" rel="stylesheet" />
     <script src="./style/aos.js"></script>
+    <script src="./style/main1.js"></script>
   </head>
-  
+
   <body>
     <div class="header">
       <!-- nav-top -->
@@ -54,50 +52,62 @@
         </ul>
       </div>
       <!-- navigation -->
-      <div class="header-container">
-        <div class="header-container-logo">
-          <img
-            class="header-logo_img"
-            src="./img/logoepro2.png"
-            alt="Ảnh logo"
-          />
+      
+        <div class="header-container">
+          <div class="header-container-logo">
+            <img
+              class="header-logo_img"
+              src="./img/logoepro2.png"
+              alt="Ảnh logo"
+            />
+          </div>
+          <div class="header-container-content">
+            <a
+              href=""
+              style="font-weight: bold"
+              class="header-container-item-link"
+              >Home</a
+            >
+            <a href="" class="header-container-item-link">Faculty</a>
+            <a href="" class="header-container-item-link">Admissions</a>
+            <a href="" class="header-container-item-link">Contact</a>
+            <a href="" class="header-container-item-link"
+              >More
+              <i class="ti-angle-down header-container-item-icon"></i>
+              <ul class="header-container-item-menu">
+                <li class="header-container-menu-bar">Action</li>
+                <li class="header-container-menu-bar">About Us</li>
+                <li class="header-container-menu-bar">Technology</li>
+                <li class="header-container-menu-bar">Design</li>
+              </ul>
+            </a>
+          </div>
+          <div class="header-container-search">
+            <input
+              type="text"
+              class="header-search-input"
+              placeholder="Enter to search"
+            />
+            <i class="ti-search header-search-btn"></i>
+          </div>
         </div>
-        <div class="header-container-content">
-          <a
-            href=""
-            style="font-weight: bold"
-            class="header-container-item-link"
-            >Home</a
-          >
-          <a href="" class="header-container-item-link">Faculty</a>
-          <a href="" class="header-container-item-link">Admissions</a>
-          <a href="" class="header-container-item-link">Contact</a>
-          <a href="" class="header-container-item-link"
-            >More
-            <i class="ti-angle-down header-container-item-icon"></i>
-            <ul class="header-container-item-menu">
-              <li class="header-container-menu-bar">Action</li>
-              <li class="header-container-menu-bar">About Us</li>
-              <li class="header-container-menu-bar">Technology</li>
-              <li class="header-container-menu-bar">Design</li>
-            </ul>
-          </a>
-        </div>
-        <div class="header-container-search">
-          <input
-            type="text"
-            class="header-search-input"
-            placeholder="Enter to search"
-          />
-          <i class="ti-search header-search-btn"></i>
-        </div>
-      </div>
+     
       <!-- banner video,content in banner -->
       <div class="header-myvideo">
         <div class="contentvideo">
           <h1>Your Future And Your Dream</h1>
-          <button id="btn2">View All</button>
-          <button id="btn1">Learn More</button>
+          <div class="content-banner-big">
+            <div class="content_banner">
+              <span>+84
+              </span>
+              <input type="phone" placeholder="Enter your phone" id="nav-top-input">
+              <button id="btn7">
+                Send <i class="fa-solid fa-arrow-right"></i> </i>
+              </button>
+            </div>
+            
+          </div>
+          
           <p>Our mission helps you to complete it</p>
         </div>
         <video autoplay muted loop id="myVideo">
@@ -125,21 +135,21 @@
       <!-- tin tức trong trường -->
       <div class="content">
         <h1>News and Announcements</h1>
-        <hr />
+        <h3></h3>
+        <h2></h2>
         <p>Latest News About School</p>
       </div>
       <div class="container">
         <div class="contentnew">
-          <div class="contentnew_layout" data-aos="fade-up-right" >
-            <div class="col-6 news" >
+          <div class="contentnew_layout" >
+            <div class="col-6 news">
               <img src="./img/ct1.jfif" alt="" />
               <div class="contentinnew">
-                <h4>
-                  all development , information of 5superhero university
-                </h4> 
+                <h4>all development , information of 5superhero university</h4>
 
                 <p>
-                  The school was founded in 2022 by team 1-T2109A with 5 key members...
+                  The school was founded in 2022 by team 1-T2109A with 5 key
+                  members...
                 </p>
                 <button id="btn3">
                   View more <i class="fa-solid fa-arrow-right"></i>
@@ -150,13 +160,15 @@
               <img src="./img/ct12.jpg" alt="" />
               <div class="contentinnew">
                 <h4>
-                    Decoding the <br> multi-platform game<br> market with FPT Aptech
+                  Decoding the multi- <br />
+                  platform game market<br/>
+                   with FPT Aptech
                 </h4>
 
                 <p>
-                    What is the path for Game <br> Programming
-                     industry in the<br> digital
-                      transformation era?...
+                  What is the path for Game <br />
+                  Programming industry in the<br />
+                  digital transformation era?...
                 </p>
                 <button id="btn3">
                   View more <i class="fa-solid fa-arrow-right"></i>
@@ -164,7 +176,7 @@
               </div>
             </div>
           </div>
-          <div class="contentnew_layout" data-aos="fade-up-right">
+          <div class="contentnew_layout" >
             <div class="col-6 news">
               <img src="./img/ct13.jpg" alt="" />
               <div class="contentinnew">
@@ -175,8 +187,9 @@
                 </h4>
 
                 <p>
-                  Vietnam Posts and Telecom<br>
-                   Group (VNPT) continues <br> to improve capacity...
+                  Vietnam Posts and Telecom<br />
+                  Group (VNPT) continues <br />
+                  to improve capacity...
                 </p>
                 <button id="btn3">
                   View more <i class="fa-solid fa-arrow-right"></i>
@@ -186,15 +199,15 @@
             <div class="col-6 news">
               <img src="./img/ct14.jpg" alt="" />
               <div class="contentinnew">
-                <h4>                  
-                    Information technology is <br> one of
-                    the profession that <br>
-                    "survive" in the Covid-19
+                <h4>Information technology
+                  it's a job
+                  "survive" in Covid-19
                 </h4>
 
                 <p>
-                    Experiencing four waves <br> of Covid-19, information <br> technology
-                     is an industry...
+                  Experiencing four waves <br />
+                  of Covid-19, information <br />
+                  technology is an industry...
                 </p>
                 <a href=""
                   ><button id="btn3">
@@ -205,11 +218,11 @@
           </div>
         </div>
       </div>
-      <div class="contentnew-footer" data-aos="fade-up">
+      <div class="contentnew-footer" >
         <button id="btn4">View More</button>
       </div>
       <!-- sự kiện trong trường -->
-      <div class="event-body" data-aos="fade-down">
+      <div class="event-body" >
         <div class="content1">
           <h1>Events</h1>
           <h3></h3>
@@ -217,55 +230,119 @@
           <p>Summary of outstanding school events</p>
         </div>
         <div class="event-body-layout">
-          <div class="event-content">
+          <div class="event-content" data-aos="fade-right">
             <div class="img-event">
               <img src="./img/ct11.jpg" alt="" />
             </div>
             <p><i class="fa-solid fa-calendar-days"></i> Day 3</p>
             <div class="sub-content">
-            <h3></h3>
-            <h5>7 / 2022</h5>
-            <h4>
-                MOTHER POINT in May<br>  2022 IT Talent Meeting</h4>
+              <h3></h3>
+              <h5>7 / 2022</h5>
+              <h4>
+                MOTHER POINT in May<br />
+                2022 IT Talent Meeting
+              </h4>
             </div>
           </div>
-          <div class="event-content">
+          <div class="event-content" data-aos="fade-right">
             <div class="img-event">
               <img src="./img/ct7.jpg" alt="" />
             </div>
             <p><i class="fa-solid fa-calendar-days"></i> Day 22</p>
             <div class="sub-content">
-            <h3></h3>
-            <h5>6 / 2022</h5>
-            <h4>
-              Graduation Ceremony 2022 <br> – Institute
-              FPT International<br> Training
-              Hanoi: a milestone <br>
-              of 500 bachelors</h4>
+              <h3></h3>
+              <h5>6 / 2022</h5>
+              <h4>
+                Graduation Ceremony <br> 2022 
+                – Institute FPT <br> International
+                Training <br /> Hanoi: a milestone <br />
+                of 500 bachelors
+              </h4>
             </div>
           </div>
-          <div class="event-content">
+          <div class="event-content" data-aos="fade-left">
             <div class="img-event">
               <img src="./img/ct10.png" alt="" />
             </div>
             <p><i class="fa-solid fa-calendar-days"></i> Day 16</p>
             <div class="sub-content">
-            <h3></h3>
-            <h5>7 / 2022</h5>
-            <h4>FPT Edu Hackathon 2022 <br> kicks off with a very "hot" <br> Blockchain theme</h4>
+              <h3></h3>
+              <h5>7 / 2022</h5>
+              <h4>
+                FPT Edu Hackathon  <br /> 2022
+                kicks off with a  <br /> very "hot" 
+                Blockchain <br /> theme
+              </h4>
             </div>
           </div>
-          <div class="event-content">
+          <div class="event-content" data-aos="fade-left">
             <div class="img-event">
               <img src="./img/ct9.jpg" alt="" />
             </div>
             <p><i class="fa-solid fa-calendar-days"></i> Day 10</p>
             <div class="sub-content">
-            <h3></h3>
-            <h5>7 / 2022</h5>
-            <h4>FAT FRIEND – THE COURT <br> OF PROGRAMING LOVE!</h4>
+              <h3></h3>
+              <h5>7 / 2022</h5>
+              <h4>
+                FAT FRIEND – THE <br /> COURT 
+                OF <br> PROGRAMING  LOVE!
+              </h4>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- chương trình đào tạo-->
+      <div class="training">
+        <div class="content3">
+          <h1>Training Model</h1>
+          <h3></h3>
+          <h2></h2>
+          <p>
+            MODEL OF TRAINING UNIVERSITY OF APPLICATION TECHNOLOGY</p>
+        </div>
+        <div class="training-body-layout">
+          
+          <div class="training-body-img">
+            <div class="training-body-subimg">
+              <i class="fa-solid fa-pen"></i>
+              <div class="training-body-content">
+                <h3>EDUCATIONAL Motto “ACTIVE LEARNING”</h3>
+              <p>Standard training of applied technology <br> university model for the 4.0 industrial revolution</p>
+              </div>
+            </div>
+            <div class="training-body-subimg">
+              <i class="fa-solid fa-book"></i>
+              <div class="training-body-content">
+                <h3>POSITIVE TEACHING QUALITY</h3>
+              <p>5SU University of Technology invests in <br>
+                 teaching staff who are professors, leading experts <br>
+                  in the industry, always ensuring the quality of teaching.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="training-body-img">
+            <div class="training-body-subimg">
+              <i class="fa-solid fa-arrow-trend-down"></i>
+            <div class="training-body-content">
+              <h3>
+                METHODOLOGY MODEL COMPLEX WITH GOODS</h3>
+                <p>On the basis of modern facilities, students are <br>
+                   trained in theory combined with practice in laboratories, <br>
+                    laboratories, factory rooms, .... equipped with state-of-the-art</p>
+            </div>
+            </div>
+              <div class="training-body-subimg">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div class="training-body-content">
+                  <h3>PROMOTE BUSINESS COOPERATION</h3>
+                <p>The school also established close relationships <br>
+                   with corporations SIEMENS <br>(Germany), ROCK-WELL (USA), Golden-Gate, etc.</p>
+              </div>
+                </div>
+          </div>
+        </div>
+        <div class="notice">
+            
         </div>
       </div>
       <!-- tuyển sinh của trường -->
@@ -276,40 +353,131 @@
           <h2></h2>
           <p>The latest information about school admissions</p>
         </div>
-        <div class="admissions-body-layout"   >
+        <div class="admissions-body-layout">
           <div class="admissions-body-img" data-aos="flip-right">
-            <img src="./img/ct1.jfif" alt="">
+            <img src="./img/ct1.jfif" alt="" />
           </div>
-          <div class="admissions-body-img">
-            <img id="pic1" src="./img/ct1.jfif" alt="" data-aos="flip-right">
-            <img  src="./img/ct1.jfif" alt="">
+          <div class="admissions-body-img" data-aos="flip-right">
+            <img id="pic1" src="./img/ct1.jfif" alt="" />
+            <img src="./img/ct1.jfif" alt="" />
           </div>
           <div class="admissions-body-img1" data-aos="fade-down">
-            <img src="./img/ct1.jfif" alt="">
-            <img src="./img/ct1.jfif" alt="">
-            <img src="./img/ct1.jfif" alt="">
+            <img src="./img/ct1.jfif" alt="" />
+            <img src="./img/ct1.jfif" alt="" />
+            <img src="./img/ct1.jfif" alt="" />
           </div>
           <div class="admissions-body-img" alt="" data-aos="fade-left">
-            <img id="pic1" src="./img/ct1.jfif" alt="" >
-            <img id="pic2" src="./img/ct1.jfif" >
+            <img id="pic1" src="./img/ct1.jfif" alt="" />
+            <img id="pic2" src="./img/ct1.jfif" />
           </div>
           <div class="admissions-body-img" alt="" data-aos="fade-left">
-            <img src="./img/ct1.jfif" alt="">
-            
+            <img src="./img/ct1.jfif" alt="" />
           </div>
         </div>
         <div class="admissions-body-slogan">
           <i class="fa-solid fa-quote-left"></i>
           <h3>
-            Follow the school to receive the latest announcements about admissions </h3>
-            <br><i class="fa-solid fa-quote-right"></i>
+            Follow the school to receive the latest announcements about
+            admissions
+          </h3>
+          <br /><i class="fa-solid fa-quote-right"></i>
         </div>
         <button id="btn5">View More</button>
       </div>
-    </div>
+
+      <!-- nhận thông tin đăng kí đăng nhập -->
+      <!-- <div class="content-agile2">
+        <form action="#" method="post">
+          <div class="form-control fc1"> 
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" title="Please enter your First Name" required="">
+          </div>
+    
+          <div class="form-control fc2">	
+            <input type="email" id="email" name="email" placeholder="mail@example.com" title="Please enter a valid email" required="">
+          </div>
+    
+          <div class="form-control fc3">	
+            <input type="password" class="lock" name="password" placeholder="Password" id="password1" required="">
+          </div>	
+    
+          <div class="form-control fc4">	
+            <input type="password" class="lock" name="confirm-password" placeholder="Confirm Password" id="password2" required="">
+          </div>			
+          
+          <input type="submit" class="register" value="Register">
+        </form>
+        <script type="text/javascript">
+          window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+          }
+          function validatePassword(){
+            var pass2=document.getElementById("password2").value;
+            var pass1=document.getElementById("password1").value;
+            if(pass1!=pass2)
+              document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+              document.getElementById("password2").setCustomValidity('');	 
+              //empty string means no validation error
+          }
+        </script>		
+      </div> -->
     
   </body>
-    <script>
-      AOS.init();
-    </script>
+  <footer>
+    <div class="footer">
+      <div class="footer-left">
+        <img src="./img/logoepro2.png" alt="">
+        
+          <p style="color: white;">Your Future And Your Dream <br>
+            Our mission helps you to complete it</p>
+            <div class="footer-left-sub">
+            <a href=""><i class="fa-solid fa-phone"></i>&nbsp;  +84375886096</a>
+            <a href=""><i class="fa-solid fa-envelope"></i> &nbsp; 5SUniversity@5SU.edu.vn</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-right-top">
+          <div class="footer-right-top1">
+            <h2>Useful Link</h2>
+            <p>Services</p>
+            <p>Apointment</p>
+            <p>Gallery</p>
+            <p>Event</p>
+          </div>
+          <div class="footer-right-top2">
+            <h2>Support</h2>
+            <p>Services</p>
+            <p>Apointment</p>
+            <p>Gallery</p>
+            <p>Event</p>
+          </div>
+          <div class="footer-right-top3">
+            <h2>Contact</h2>
+            <p>Press</p>
+            <p>Help/FAQ</p>
+            <input type="text" id="textfoot" placeholder="Enter you email">
+          </div>
+        </div>
+        <div class="footer-right-bot">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="last-nocopyright">
+      <span>©Copyright 2022/T2109A-Group1/5 SuperHero University</span>
+    </div>
+      <!-- ------------------------------------ -->
+      <div id="backtop">
+        <i class="fa-solid fa-angle-up"></i>
+      </div>
+  </footer>
+  <script>
+    AOS.init();
+   
+  </script>
 </html>
